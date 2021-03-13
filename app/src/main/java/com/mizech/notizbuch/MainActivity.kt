@@ -41,8 +41,21 @@ class MainActivity : AppCompatActivity() {
         notesList.layoutManager = LinearLayoutManager(this)
     }
 
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        val dbh = DatabaseHandler(this)
+        val wdb = dbh.writableDatabase
+
+        val cursor = wdb.rawQuery("SELECT * FROM notes", null)
+        val count = cursor.count
+
+        menu?.getItem(1)?.isEnabled = count != 0
+
+        return super.onPrepareOptionsMenu(menu)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.actionbar_menu, menu)
+
         return true
     }
 
@@ -62,8 +75,6 @@ class MainActivity : AppCompatActivity() {
                 dialog.setMessage(getString(R.string.ask_continue))
 
                 dialog.setPositiveButton(R.string.yes) { dialog, _ ->
-                    // TODO
-                    // Check if notes exist before deleting.
                     wdb?.execSQL("DELETE FROM notes")
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
