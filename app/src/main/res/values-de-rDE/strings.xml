@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notizbuch</string>
+    <string name="create_note">Notiz erstellen</string>
+    <string name="delete_list">Alle Notizen löschen</string>
+    <string name="title_min_length">Die Titel der Notiz benötigt mindestens drei Zeichen.</string>
+    <string name="update">Aktualisieren</string>
+    <string name="delete">Löschen</string>
+    <string name="back">Zurück</string>
+    <string name="label_create_note">Neue Notiz</string>
+    <string name="hint_note_text">Der Text der Notiz.</string>
+    <string name="hint_note_title">Der Titel der Notiz.</string>
+    <string name="ask_delete_note">Die Notiz wird gelöscht.</string>
+    <string name="confirm_cancel">Die Aktion wurde abgebrochen.</string>
+    <string name="confirm_single_deleted">Die Notiz wurde gelöscht.</string>
+    <string name="confirm_all_deleted">Alle Notizen wurden gelöscht.</string>
+    <string name="no">Nein</string>
+    <string name="yes">Ja</string>
+    <string name="ask_continue">Möchten Sie fortfahren?</string>
+    <string name="ask_delete_list">Alle Notizen werden gelöscht.</string>
+    <string name="job">Job</string>
+    <string name="family">Familie</string>
+    <string name="hobby">Hobby</string>
+    <string name="other">Sonstiges</string>
+</resources>
