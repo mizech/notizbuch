@@ -16,10 +16,10 @@ für die Notizliste.
 - Klick auf den Button in der rechten, oberen Ecke der Notiz-Liste öffnet die Option zum Löschen der gesamten Liste.
 
 <div style="text-align: center">
-    <img src="./images/img1.png" alt="screenshot_1" width="200" />
-    <img src="./images/img2.png" alt="screenshot_2" width="200" />
-    <img src="./images/img3.png" alt="screenshot_3" width="200" />
-    <img src="./images/img4.png" alt="screenshot_4" width="200" />
+    <img src="./images/img1.png" alt="screenshot_1" width="200" />&nbsp;&nbsp;
+    <img src="./images/img2.png" alt="screenshot_2" width="200" />&nbsp;&nbsp;
+    <img src="./images/img3.png" alt="screenshot_3" width="200" />&nbsp;&nbsp;
+    <img src="./images/img4.png" alt="screenshot_4" width="200" />&nbsp;&nbsp;
     <img src="./images/img5.png" alt="screenshot_5" width="200" />
 </div>
 
