@@ -22,4 +22,5 @@
     <string name="family">Familie</string>
     <string name="hobby">Hobby</string>
     <string name="other">Sonstiges</string>
+    <string name="updated_message">Die Notiz wurde aktualisiert.</string>
 </resources>

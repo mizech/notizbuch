@@ -60,6 +60,9 @@ class UpdateNote : AppCompatActivity() {
                 cv.put("category", spinnerCategory.selectedItemPosition)
                 wDatabase?.update("notes", cv,
                     "_id=?", arrayOf(iId.toString()))
+
+                Toast.makeText(applicationContext, getString(R.string.updated_message),
+                    Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(applicationContext,
                     R.string.title_min_length,

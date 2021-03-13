@@ -21,6 +21,7 @@
     <string name="hobby">Hobby</string>
     <string name="other">Other</string>
     <string name="update">Update</string>
+    <string name="updated_message">Note has become updated.</string>
     <string-array name="categories">
         <item>@string/job</item>
         <item>@string/family</item>
