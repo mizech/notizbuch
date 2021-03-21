@@ -28,8 +28,8 @@ class InsertNote : AppCompatActivity() {
                 val category = spinnerCategory.selectedItemPosition
 
                 val cv = ContentValues()
-                cv.put("title", noteTitle)
-                cv.put("note", noteText)
+                cv.put("title", noteTitle.trim())
+                cv.put("note", noteText.trim())
                 cv.put("category", category)
 
                 writableDb.insertWithOnConflict("notes", null, cv,

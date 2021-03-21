@@ -17,6 +17,11 @@ class UpdateNote : AppCompatActivity() {
     private val dbh = DatabaseHandler(this)
     private var wDatabase: SQLiteDatabase? = null
 
+    /*
+        ToDo
+        trim() bei Text und Title.
+     */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single_note)
@@ -24,8 +29,8 @@ class UpdateNote : AppCompatActivity() {
         wDatabase = dbh.writableDatabase
 
         iId = intent.getIntExtra("noteId", -1)
-        sNoteTitle = intent.getStringExtra("noteTitle").toString()
-        sNoteText = intent.getStringExtra("noteText").toString()
+        sNoteTitle = intent.getStringExtra("noteTitle").toString().trim()
+        sNoteText = intent.getStringExtra("noteText").toString().trim()
         iCategory = intent.getIntExtra("noteCategory", 3)
 
         singleNoteTitle.setText(sNoteTitle)
